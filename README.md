@@ -9,7 +9,8 @@ SNS문서에서 나타나는 문장은 다음과 같은 특징을 가진다.
 크롤링을 통해 얻은 SNS문서를 활용하기 위해 SNS문서 문장 분리기가 필요하다.
 SNS문서 문장 분리기를 위한 말뭉치를 구축한다.
 
-Naver sentiment movie corpus v1.0의 일부를 가져와 document를 이용하여 한국어 SNS문장 분리를 위한 말뭉치를 얻는다. document는 한명의 user가 남긴 댓글로 여러 문장으로 이루어진다. 여러 문장으로 이루어진 문서를 하나의 문장으로 분리한다. 
+Naver sentiment movie corpus v1.0<sup>[1](#footnote_1)</sup>
+의 일부를 가져와 document를 이용하여 한국어 SNS문장 분리를 위한 말뭉치를 얻는다. document는 한명의 user가 남긴 댓글로 여러 문장으로 이루어진다. 여러 문장으로 이루어진 문서를 하나의 문장으로 분리한다. 
 
 또한 영화 리뷰 데이터를 이용하여 다수의 문장이 '--영화' 또는 '--드라마' 등 명사로 끝나며 이와 같은 문장은 제거한다. 
 
@@ -26,7 +27,9 @@ Naver sentiment movie corpus v1.0의 일부를 가져와 document를 이용하�
 |한자|한자로 끝나는 문장|"한국 최악의 Worst 5 영화란 말에 궁금해서 본 1人"|
 |특수기호|다양한 특수기호로 끝나는 형태|"다시봐두 재미에 감동♥♥", "보고나서 미소짓게 만드네요^^"|
 
+
 만들어진 말뭉치는 총 28,018 문장이며 종결 어미당 문장 수는 다음의 표와 같다.
+
 
 |종결어미|문장수|
 |:---:|---:|
@@ -39,3 +42,11 @@ Naver sentiment movie corpus v1.0의 일부를 가져와 document를 이용하�
 |한자|9|
 |특수기호|2048|
 |계|28018|
+
+------------------
+말뭉치를 이용한 한국어 경계 인식 제안 논문<sup>[2](#footnote_1)</sup>
+
+------------------
+<a name="footnote_1">1</a>: https://github.com/e9t/nsmc/
+
+<a name="footnote_1">2</a>: https://koreascience.kr/article/CFKO202130060744839.pdf
