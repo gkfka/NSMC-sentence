@@ -1,4 +1,4 @@
-# NSMC-sentence
+# NSMC-sentence 문장 분리 말뭉치
 
 SNS문서에서 나타나는 문장은 다음과 같은 특징을 가진다.
 
